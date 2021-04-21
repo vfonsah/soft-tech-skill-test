@@ -1,20 +1,20 @@
 body {
-  padding-inline: 35vw;
+  padding-inline: 37vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1.header__heading {
   font-variant: small-caps;
   text-transform: capitalize;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(53, 52, 52);
 }
 
 /* main element and child components */
 
 main {
-  border: 1px solid grey;
-  padding-inline: 1em 0.6em;
+  border: 1px solid rgba(175, 175, 175, 0.486);
+  padding-inline: 1em 0.9em;
   border-radius: 12px;
 }
 
@@ -23,7 +23,7 @@ main {
 }
 
 .main__hr--bottom {
-  height: 0.35em !important;
+  height: 0.25em !important;
   border: 1px solid rgb(53, 51, 51);
   border-radius: 1em;
   background-color: rgb(41, 40, 40) !important;
@@ -34,19 +34,49 @@ main {
     2. bottom nav-bar
 */
 
-.nav-top {
-  padding-top: 0.4em;
+.nav-top,
+.nav-bottom {
+  padding: 0.4em 0;
 }
 
 .nav-top__icon-list {
   float: right;
+  position: relative;
+  top: -1em;
+  list-style-type: none;
+}
+
+.nav-top__device-time {
+  font-size: smaller;
+  font-weight: 600;
+  position: relative;
+  left: 6px;
 }
 
 .nav-top__icon-item {
+  margin-inline-start: 0.2em;
   display: inline;
 }
 
-.nav-top__icon-list,
-.nav-bottom__icon-list {
-  list-style-type: none;
+.nav-bottom__icon-item {
+  display: inline;
+}
+
+.nav-bottom__menu-icon {
+  position: relative;
+  left: 0.5em;
+  border-radius: 5px;
+}
+
+.nav-bottom__user_profile {
+  float: right;
+  position: relative;
+  right: -6.8em;
+}
+
+img.nav-bottom__user-icon {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
