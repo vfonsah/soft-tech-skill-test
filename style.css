@@ -47,7 +47,8 @@ main {
   border: 1px solid rgb(53, 51, 51);
   border-radius: 1em;
   background-color: rgb(41, 40, 40) !important;
-  margin-top: 4em;
+  margin-block-start: 4em;
+  margin-block-end: 2em ;
 }
 
 /* nav elements and components */
@@ -58,33 +59,17 @@ main {
 
 nav.nav-main {
   padding-inline: 1em 0.9em;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.3em;
   border-radius: inherit;
   background: linear-gradient(
       0deg,
-      rgba(134, 213, 112, 0),
-      rgba(78, 227, 101, 0.51)
+      rgba(34, 148, 85, 0.39),
+      rgba(85, 163, 85, 0.082)
     ),
-    url("img/virus-earth.jpg");
+    url("img/med-kit-caps.jpg");
   background-size: cover;
   background-blend-mode: multiply;
-}
-
-nav.nav-main #overlay {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 0, 150, 0.3),
-    rgba(255, 0, 150, 0.3)
-  );
-  z-index: 999;
-  cursor: pointer;
+  background-position: top;
 }
 
 .nav-top,
@@ -131,20 +116,49 @@ img.nav-bottom__user-icon {
   vertical-align: middle;
   width: 30px;
   height: 30px;
+  padding: 0.2em;
   border-radius: 50%;
+  border: 1px solid rgba(221, 221, 221, 0.671);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 p.user--greeting {
   display: contents;
   margin-block: 0em;
   font-size: smaller;
-  color: rgb(53, 51, 51);
+  color: rgba(60, 61, 61, 0.808);
+  font-weight: 700;
 }
 
 h2.user--enquiry {
-  margin-block: 0.4em;
+  margin-block: 0.5em;
   font-size: medium;
   color: rgba(39, 38, 38, 0.774);
+  font-weight: 700;
+}
+
+.nav__search-bar {
+  padding: 0.2em 2.5em;
+  border-radius: 0.5em;
+  width: 25vw;
+  height: 2.5em;
+  border: 1px solid rgba(221, 221, 221, 0.671);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+i.search-bar__icon {
+  vertical-align: middle;
+  position: absolute;
+}
+
+i.search-bar__icon.bi-search {
+  margin-inline-start: 0.5em;
+  margin-block-start: 0.4em;
+}
+
+i.search-bar__icon.bi-sliders {
+    margin-inline-start: -1.6em;
+    margin-block-start: 0.4em;
 }
 
 /* upcoming appointments */
@@ -186,6 +200,10 @@ li.appointment__profile-item.role,
 li.appointment__profile-item.level {
   color: rgba(101, 102, 101, 0.678);
   font-weight: 400;
+}
+
+li.appointment__profile-item.level {
+  word-spacing: 0em;
 }
 
 /* appointment schedule details and actions */
@@ -256,24 +274,25 @@ li.appointment__profile-item.level {
   min-width: 3vw;
 }
 
-.doctor__img{
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    display: block;
-    margin-inline: auto;
-    border: 1px solid rgba(221, 221, 221, 0.671);
+.doctor__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: block;
+  margin-inline: auto;
+  border: 1px solid rgba(221, 221, 221, 0.671);
 }
 
-.doctor__name, .doctor__specialty{
-    font-size: x-small;
-    text-align: center;
+.doctor__name,
+.doctor__specialty {
+  font-size: x-small;
+  text-align: center;
 }
 
 .doctor__name {
-    color:rgba(53, 54, 53, 0.753)
+  color: rgba(53, 54, 53, 0.753);
 }
 
-.doctor__specialty{
-    color:rgba(101, 102, 101, 0.678)
+.doctor__specialty {
+  color: rgba(101, 102, 101, 0.678);
 }
