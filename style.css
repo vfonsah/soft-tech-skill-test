@@ -1,27 +1,52 @@
-body{
-    padding-inline: 35vw;
+body {
+  padding-inline: 35vw;
 }
 
 h1.header__heading {
-    font-variant: small-caps;
-    text-transform: capitalize;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(53, 52, 52);
 }
 
-main{
-    border: 1px solid grey;
-    padding-inline: 1.2em;
-    border-radius: 12px;
+/* main element and child components */
+
+main {
+  border: 1px solid grey;
+  padding-inline: 1em 0.6em;
+  border-radius: 12px;
 }
 
-.main__footer{
-    padding-inline: 7rem;
+.main__footer {
+  padding-inline: 7rem;
 }
 
 .main__hr--bottom {
-    height: .2em;
-    border: 1px solid rgb(53, 51, 51);
-    border-radius: 16px;
-    background-color: rgb(36, 35, 35);
+  height: 0.35em !important;
+  border: 1px solid rgb(53, 51, 51);
+  border-radius: 1em;
+  background-color: rgb(41, 40, 40) !important;
+}
+
+/* nav elements and components */
+/*  1. top nav-bar
+    2. bottom nav-bar
+*/
+
+.nav-top {
+  padding-top: 0.4em;
+}
+
+.nav-top__icon-list {
+  float: right;
+}
+
+.nav-top__icon-item {
+  display: inline;
+}
+
+.nav-top__icon-list,
+.nav-bottom__icon-list {
+  list-style-type: none;
 }
