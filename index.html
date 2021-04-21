@@ -17,6 +17,7 @@
     </header>
     <main>
         <nav class="nav-main">
+            <span id="overlay"></span>
             <nav class="nav-top">
                 <span class="nav-top__device-time">19&#58;02</span>
                 <ul class="nav-top__icon-list">
@@ -36,13 +37,33 @@
                 class="nav__search-bar"><i class="bi bi-sliders"></i>
         </nav>
 
-        <section class="coming-appointments">
-            <h3 class="coming-appointments__h3">Up Coming Appointments</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto et velit nisi animi deserunt, minus
-                deleniti
-                quaerat repudiandae eligendi, consectetur natus sint facilis illum alias architecto reprehenderit quam
-                expedita aspernatur?</p>
+        <section class="appointments">
+            <h3 class="appointments__h3">Up Coming Appointments</h3>
+            <div class="appointments__card">
+                <div class="appointment">
+                    <img class="appointment__profile-img" src="img/woman-dark-hair.png" alt="" srcset="">
+                    <ul class="appointment__profile">
+                        <li class="appointment__profile-item name">Dr Sophie Ndumbe</li>
+                        <li class="appointment__profile-item role">Cardiologist</li>
+                        <li class="appointment__profile-item level">7 years experience</li>
+                    </ul>
+                </div>
+
+                <div class="appointment__schedule">
+                    <span class="schedule__actions">
+                        <i class="bi bi-telephone"></i>&nbsp;
+                        <i class="bi bi-calendar"></i>
+                    </span>
+                    <span class="schedule__date">Fri 23rd April</span>
+                    <span class="schedule__time">10&#58;00&nbsp;am&nbsp;&#45;&nbsp;12&#58;30&nbsp;pm</span>
+                </div>
+
+            </div>
         </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto et velit nisi animi deserunt, minus
+            deleniti
+            quaerat repudiandae eligendi, consectetur natus sint facilis illum alias architecto reprehenderit quam
+            expedita aspernatur?</p>
         <footer class="main__footer">
             <hr class="main__hr--bottom">
         </footer>

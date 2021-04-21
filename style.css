@@ -15,6 +15,7 @@ h1.header__heading {
 main {
   border: 1px solid rgba(175, 175, 175, 0.486);
   border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main__footer {
@@ -38,8 +39,31 @@ nav.nav-main {
   padding-inline: 1em 0.9em;
   padding-bottom: 0.2em;
   border-radius: inherit;
-  background-image: url("img/virus-earth.jpg");
-  background-size: contain;
+  background: linear-gradient(
+      0deg,
+      rgba(134, 213, 112, 0),
+      rgba(78, 227, 101, 0.51)
+    ),
+    url("img/virus-earth.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+nav.nav-main #overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 150, 0.3),
+    rgba(255, 0, 150, 0.3)
+  );
+  z-index: 999;
+  cursor: pointer;
 }
 
 .nav-top,
@@ -93,9 +117,90 @@ p.user--greeting {
   display: contents;
   margin-block: 0em;
   font-size: smaller;
+  color: rgb(53, 51, 51);
 }
 
 h2.user--enquiry {
   margin-block: 0.4em;
   font-size: medium;
+  color: rgba(39, 38, 38, 0.774);
+}
+
+/* upcoming appointments */
+
+section.appointments {
+  padding-inline: 0.8em;
+}
+
+.appointments__h3 {
+  font-size: medium;
+  text-align: justify;
+  color: rgba(23, 126, 23, 0.712);
+}
+
+.appointments__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 0.2em 0.5em 0.6em;
+  border-radius: 7px;
+}
+
+/* profile of person been scheduled */
+
+.appointment__profile-img {
+  float: left;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 1px;
+  border: 1px solid rgba(221, 221, 221, 0.671);
+}
+
+.appointment__profile {
+  list-style-type: none;
+  font-size: small;
+  margin-inline-start: 1.5em;
+}
+
+li.appointment__profile-item {
+  line-height: 1.4em;
+  vertical-align: top;
+}
+
+li.appointment__profile-item.name {
+  font-weight: 600;
+}
+
+li.appointment__profile-item.role,
+li.appointment__profile-item.level {
+  color: rgba(101, 102, 101, 0.678);
+  font-weight: 400;
+}
+
+/* appointment schedule details and actions */
+
+.appointment__schedule span {
+  display: block;
+  text-align-last: right;
+}
+
+.schedule__actions {
+  margin-block: 0.3em;
+}
+
+.schedule__actions i {
+  font-size: 0.8rem;
+  color: rgba(23, 126, 23, 0.712);
+}
+
+.schedule__date {
+  color: rgba(48, 49, 48, 0.952);
+  font-weight: 500;
+  font-size: smaller;
+}
+
+.schedule__time {
+  font-weight: 700;
+  font-size: x-small;
+  letter-spacing: 0.2px;
 }
