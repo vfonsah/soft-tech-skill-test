@@ -3,11 +3,21 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* HEADINGS */
+
 h1.header__heading {
   font-variant: small-caps;
   text-transform: capitalize;
   text-align: center;
   color: rgb(53, 52, 52);
+}
+
+.appointments__h3,
+.specialties__h3 {
+  font-size: medium;
+  text-align: justify;
+  color: rgba(23, 126, 23, 0.712);
+  text-transform: capitalize;
 }
 
 /* main element and child components */
@@ -128,14 +138,9 @@ h2.user--enquiry {
 
 /* upcoming appointments */
 
-section.appointments {
+section.appointments,
+section.specialties {
   padding-inline: 0.8em;
-}
-
-.appointments__h3 {
-  font-size: medium;
-  text-align: justify;
-  color: rgba(23, 126, 23, 0.712);
 }
 
 .appointments__card {
@@ -203,4 +208,32 @@ li.appointment__profile-item.level {
   font-weight: 700;
   font-size: x-small;
   letter-spacing: 0.2px;
+}
+
+/* SPECIALTIES SECTION */
+
+.specialties__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 0.6em 0.5em 0.1em;
+  margin-inline-start: 0.6em;
+  border-radius: 7px;
+  display: inline-block;
+  min-width: 4vw;
+}
+
+.specialty__icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0.3em;
+  color: rgba(248, 248, 248, 0.904) !important;
+  background-color: rgba(9, 148, 9, 0.555);
+  display: block;
+  margin-inline: auto;
+}
+
+.specialty__tag {
+  font-size: x-small;
+  font-weight: bold;
 }
