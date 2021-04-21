@@ -14,7 +14,6 @@ h1.header__heading {
 
 main {
   border: 1px solid rgba(175, 175, 175, 0.486);
-  padding-inline: 1em 0.9em;
   border-radius: 12px;
 }
 
@@ -30,9 +29,18 @@ main {
 }
 
 /* nav elements and components */
-/*  1. top nav-bar
+/*  0. parent nav-bar (main)
+    1. top nav-bar
     2. bottom nav-bar
 */
+
+nav.nav-main {
+  padding-inline: 1em 0.9em;
+  padding-bottom: 0.2em;
+  border-radius: inherit;
+  background-image: url("img/virus-earth.jpg");
+  background-size: contain;
+}
 
 .nav-top,
 .nav-bottom {
@@ -47,7 +55,7 @@ main {
 }
 
 .nav-top__device-time {
-  font-size: smaller;
+  font-size: x-small;
   font-weight: 600;
   position: relative;
   left: 6px;
@@ -79,4 +87,15 @@ img.nav-bottom__user-icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+p.user--greeting {
+  display: contents;
+  margin-block: 0em;
+  font-size: smaller;
+}
+
+h2.user--enquiry {
+  margin-block: 0.4em;
+  font-size: medium;
 }
